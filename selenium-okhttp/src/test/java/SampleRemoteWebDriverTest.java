@@ -20,10 +20,11 @@ public class SampleRemoteWebDriverTest {
     @Test
     public void myTest() throws MalformedURLException {
 
-        System.setProperty("http.proxyHost", "localhost");
-        System.setProperty("https.proxyHost", "localhost");
-        System.setProperty("http.proxyPort", "8889");
-        System.setProperty("https.proxyPort", "8889");
+//        Enable these to proxy all traffic
+//        System.setProperty("http.proxyHost", "localhost");
+//        System.setProperty("https.proxyHost", "localhost");
+//        System.setProperty("http.proxyPort", "8889");
+//        System.setProperty("https.proxyPort", "8889");
 
         try {
 
