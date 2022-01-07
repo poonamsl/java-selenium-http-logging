@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class SampleAppiumDriverTest {
+public class RealDeviceAppiumDriverTest {
 
     public static final String SAUCE_USERNAME = System.getenv("SAUCE_USERNAME");
     public static final String SAUCE_ACCESS_KEY = System.getenv("SAUCE_ACCESS_KEY");
