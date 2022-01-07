@@ -9,23 +9,20 @@ This allows all request info including headers, request and response body.
 The steps to add this to your project are:
 
 1. Add logging-interceptor as a dependency
-```xml
-<dependency>
-    <groupId>com.squareup.okhttp3</groupId>
-    <artifactId>logging-interceptor</artifactId>
-    <version>3.11.0</version>
-</dependency>
-```
-
+    ```xml
+    <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>logging-interceptor</artifactId>
+        <version>3.11.0</version>
+    </dependency>
+    ```
 1. Copy the contents of HTTPFactory.java
-
 1. Create HTTPFactory object and HTTPCommandExecutor
-```java
-HTTPFactory factory = new HTTPFactory();
-HttpCommandExecutor executor = new HttpCommandExecutor(Collections.emptyMap(), new URL(SAUCE_URL), factory);
-```
-
+    ```java
+    HTTPFactory factory = new HTTPFactory();
+    HttpCommandExecutor executor = new HttpCommandExecutor(Collections.emptyMap(), new URL(SAUCE_URL), factory);
+    ```
 1. Create Driver object with executor
-```java
-AppiumDriver driver = new AppiumDriver(executor, caps);
-```
+    ```java
+    AppiumDriver driver = new AppiumDriver(executor, caps);
+    ```
